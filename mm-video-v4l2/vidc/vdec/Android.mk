@@ -146,7 +146,7 @@ ifeq ($(call is-board-platform-in-list, $(TARGETS_THAT_NEED_HEVC_LIB)),true)
 LOCAL_MODULE                    := libOmxVdecHevc
 LOCAL_MODULE_TAGS               := optional
 LOCAL_VENDOR_MODULE             := true
-LOCAL_CFLAGS                    := $(libmm-vdec-def)
+LOCAL_CFLAGS                    := $(libmm-vdec-def) -Wall -Wno-error
 LOCAL_C_INCLUDES                += $(libmm-vdec-inc)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-vdec-add-dep)
 

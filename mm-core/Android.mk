@@ -102,7 +102,7 @@ LOCAL_MODULE            := libOmxCore
 LOCAL_MODULE_TAGS       := optional
 LOCAL_VENDOR_MODULE     := true
 LOCAL_SHARED_LIBRARIES  := liblog libdl libcutils
-LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
+LOCAL_CFLAGS            := $(OMXCORE_CFLAGS) -Wall -Wno-error
 
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
@@ -127,7 +127,7 @@ LOCAL_MODULE            := libmm-omxcore
 LOCAL_MODULE_TAGS       := optional
 LOCAL_VENDOR_MODULE     := true
 LOCAL_SHARED_LIBRARIES  := liblog libdl libcutils
-LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
+LOCAL_CFLAGS            := $(OMXCORE_CFLAGS) -Wall -Wno-error
 
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c

@@ -30,6 +30,8 @@ ifeq ($(TARGET_USES_MEDIA_EXTENSIONS),true)
 LOCAL_CFLAGS += -DUSE_NATIVE_HANDLE_SOURCE
 endif
 
+LOCAL_CFLAGS += -Wall -Werror
+
 LOCAL_SHARED_LIBRARIES :=       \
         libutils                \
         libcutils               \
@@ -43,4 +45,3 @@ LOCAL_MODULE := libstagefrighthw
 LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
-

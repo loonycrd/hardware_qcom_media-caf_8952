@@ -12,7 +12,7 @@ OMXCORE_CFLAGS += \
     -Werror \
     -Wno-unused-function \
     -Wno-unused-value \
-    -Wno-unused-variable \
+    -Wno-unused-variable
 
 #===============================================================================
 #             Figure out the targets
